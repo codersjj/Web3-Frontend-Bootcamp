@@ -1,0 +1,38 @@
+@import url(./checkbox.css);
+
+.to-do-item {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  cursor: pointer;
+  
+  &.completed {
+    .item-content {
+      text-decoration: line-through;
+      color: #ccc;
+    }
+  }
+
+  .item-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+
+    input {
+      cursor: pointer;
+    }
+
+    span {
+      flex: 1;
+      display: flex;
+      padding-left: 1rem;
+      word-break: break-word;
+    }
+  }
+
+  button {
+    align-self: center;
+  }
+}
